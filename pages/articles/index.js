@@ -18,13 +18,10 @@ const Articles = ({ articles }) => {
                                     <p className="">
                                         {article.frontmatter.title}
                                     </p>
-                                    <p className="">
-                                        {article.frontmatter.date}
-                                    </p>
                                 </div>
                             </Link>
-                            <div className="flex justify-end hover:border-b hover:border-gray-800 transition mt-1">
-                                <p className="">{article.frontmatter.date}</p>
+                            <div className="flex justify-end mt-1">
+                                <p>{article.frontmatter.date}</p>
                             </div>
                         </li>
                     ))}

@@ -8,10 +8,12 @@ import Layout from "../../components/organisms/Layout";
 const Article = ({ frontmatter, content }) => {
     return (
         <Layout>
-            <article>
-                <h1 className="text-3xl font-bold">{frontmatter.title}</h1>
-                <p className="text-gray-500">{frontmatter.date}</p>
-                <div className="prose">
+            <article className="slug">
+                <h1 className="text-3xl font-bold text-center">
+                    {frontmatter.title}
+                </h1>
+                <p className="text-gray-500 text-center">{frontmatter.date}</p>
+                <div className="prose bg-blue-50 rounded mt-12">
                     <ReactMarkdown>{content}</ReactMarkdown>
                 </div>
             </article>
